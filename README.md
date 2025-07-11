@@ -154,7 +154,7 @@ server.setRequestHandler(ListToolsRequestSchema, async () => ({
 ### Configuración del entorno
 
 #### Prerrequisitos:
-- Node.js 18+
+- Node.js 20+ (recomiendo 22 que admite por defecto el typescript)
 - TypeScript
 - IDE Trae (recomendado)
 
@@ -605,8 +605,8 @@ npm run build
    {
      "mcpServers": {
        "weather": {
-         "command": "node",
-         "args": ["dist/weather-server.js"]
+         "command": "node tsx",
+         "args": ["src/index.tsx"]
        }
      }
    }
